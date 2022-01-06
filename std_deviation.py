@@ -4,8 +4,9 @@ Created on Tue Jan  4 18:12:59 2022
 Standard Deviation Algorithm -- by DLLD 04/01/22
 @author: dllopezd
 """
+import math
 ## 0. FIRST_LIST & SECOND_LIST: Create number list
-first_list = [1,2,3]
+first_list = [18,16,15,15,16]
 second_list=[]
 
 ## 1. NUMBER: Counts the number of elements in an first_list, stores it in v_N
@@ -19,5 +20,6 @@ for n in first_list:
     second_list.append(v_loop)
 
 ## 4. TOTAL: Add the elements of the 2nd_list and divide them by N
-v_total= sum(second_list)/v_N
+v_total= math.sqrt(sum(second_list)/v_N)
 print(v_total)
+
